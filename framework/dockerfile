@@ -1,0 +1,11 @@
+FROM tiangolo/uwsgi-nginx:latest
+
+MAINTAINER Abhishek Gorti <abhishek.gorti@yale.edu>
+
+RUN pip install flask
+
+# Add app configuration to Nginx
+COPY nginx.conf /etc/nginx/conf.d/
+
+# Copy sample app
+RUN  git clone https://github.com/waco001/SAR.git /opt/
