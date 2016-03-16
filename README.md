@@ -7,7 +7,7 @@
 
 To run the mongodb server, use 
     
-    sudo docker run --name mongodb mongo
+    sudo docker run --name mongodb mongo:3.2.4
 
 **Release**
 
